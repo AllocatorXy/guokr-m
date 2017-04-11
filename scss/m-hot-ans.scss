@@ -1,0 +1,82 @@
+.hot-ans {
+  overflow: hidden;
+  > .title {
+    font-size: .16rem;
+    margin: 0;
+    height: .4rem;
+    line-height: .4rem;
+    border-bottom: 1px solid #ccc;
+    padding: 0 .12rem;
+    background-color: $ui;
+    > .ellp {
+      float: right;
+      text-align: center;
+      line-height: .1rem;
+      height: .2rem;
+      width: .2rem;
+      color: $ic;
+      border: .02rem solid $ic;
+      border-radius: 50%;
+      margin-top: .08rem;
+    }
+  }
+  > .index {
+    margin: 0;
+    padding: 0;
+    height: .4rem;
+    > li {
+      list-style: none;
+      float: left;
+      font-size: .14rem;
+      line-height: .4rem;
+      width: .62rem;
+      text-align: center;
+      border-bottom: 3px solid transparent;
+      color: #555;
+      -webkit-transition: border .5s;
+      -moz-transition: border .5s;
+      -ms-transition: border .5s;
+      -o-transition: border .5s;
+      transition: border .5s;
+      &.act {
+        border-color: #d12949;
+      }
+    }
+  }
+  > .swiper-wrapper {
+    > .top-content {
+      border-bottom: none;
+      > .detail {
+        height: 1.37rem;
+        > a {
+          padding-left: .07rem;
+          > .title {
+            @include ellp;
+            padding-right: .07rem;
+            color: #333;
+            font-weight: normal;
+            margin: 0;
+            font-size: .14rem;
+          }
+          > .thumb {
+            float: left;
+            width: 1.04rem;
+            height: .75rem;
+            background: url(../imgs/jp-06.jpg) no-repeat center;
+            background-size: cover;
+          }
+          > p {
+            @include ellpMultiLine(4);
+            color: #999;
+            float: left;
+            margin: 0 0 0 .14rem;
+            width: 1.7rem;
+            height: .75rem;
+            font-size: .11rem;
+            line-height: .19rem;
+          }
+        }
+      }
+    }
+  }
+}

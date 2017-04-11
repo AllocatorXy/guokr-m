@@ -1,0 +1,67 @@
+footer {
+  height: 1.36rem;
+  @include clearFix;
+  > .btn-to-top {
+    float: left;
+    width: 100%;
+    height: .6rem;
+    line-height: .6rem;
+    font-size: .13rem;
+    color: #777;
+    background-color: $ui;
+    border: {
+      top: 1px solid #eee;
+      bottom: .02rem solid $mc;
+    }
+    &:active {
+      background-color: $ui - #202020;
+    }
+    &:before {
+      font-size: .17rem;
+      padding: .04rem;
+      color: $ic;
+      border: .02rem solid $ic;
+      border-radius: 50%;
+      margin-right: .08rem;
+    }
+  }
+  > .bottom-bar {
+    height: .74rem;
+    background-color: #262626;
+    float: left;
+    width: 100%;
+    > button {
+      float: left;
+      color: #fff;
+      height: .3rem;
+      margin-top: 0.22rem;
+      text-align: center;
+      width: 50%;
+      font-size: .14rem;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+      &.pc-btn {
+        border-right: 1px solid #666;
+        position: relative;
+        > span {
+          position: absolute;
+          font-size: 1px;
+          top: 15%;
+          left: 35%;
+          @media (min-width: 500px) and (max-width: 640px) {
+            top: 25%;
+            left: 36%;
+          }
+        }
+        &:before {
+          margin-right: .05rem;
+        }
+      }
+      &:before {
+        font-size: .22rem;
+      }
+    }
+  }
+}

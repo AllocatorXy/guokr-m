@@ -1,0 +1,30 @@
+/**
+ * date: 2017-03-27 16:07:58
+ * author: AllocatorXy
+ * description: guokr base
+ */
+@import "vars.scss";
+@import "mixins.scss";
+@import "iconfont.css";
+button {
+  outline: none;
+  border: none;
+  padding: 0;
+  background: none;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+a:focus,
+input:focus {
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+@media (max-width: 640px) {
+  html,
+  body {
+    font-size: 100px;
+  }
+}

@@ -1,0 +1,27 @@
+@mixin clearFix() {
+  zoom: 1;
+  &:after {
+    content:'';
+    display:block;
+    clear:both;
+  }
+}
+@mixin ellp() {
+  & {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+  }
+}
+@mixin ellpMultiLine($l) { // 多行显示...
+  & {
+    display: -webkit-box; // 对象作为伸缩盒子模型显示
+    -webkit-box-orient: vertical; // 设置或检索伸缩盒对象的子元素的排列方式
+    -webkit-line-clamp: $l; // 显示的行数
+    overflow: hidden;
+    white-space: normal;
+    word-break: break-all;
+    text-overflow: ellipsis;
+  }
+}

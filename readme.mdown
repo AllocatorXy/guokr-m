@@ -1,0 +1,4 @@
+### readme
+
+戳这里 => <a href="https://github.com/AllocatorXy/guokr-m" target="_blank">demo</a>
+适配宽度320-768
